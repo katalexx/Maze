@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Лабиринты</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+        <header class="header">
+            <h1>Генератор лабиринтов</h1>
+            <div class="header-buttons">
+                <button class="default-btn login-btn">Войти</button>
+                <button class="default-btn reg-btn">Регистрация</button>
+                <a href="./account.html" class="default-btn account">Личный кабинет</a>
+            </div>
+        </header>
+        <button class="print default-btn">Распечатать</button>
+        <button class="save default-btn">Сохранить лабиринт</button>
+        <button class="generate default-btn">Создать лабиринт</button>
+        <select class="select">
+            <option selected hidden>Выберите сложность</option>
+            <option value="easy">Легкий</option>
+            <option value="medium">Средний</option>
+            <option value="hard">Сложный</option>
+        </select>
+        <canvas></canvas>
+
+        <div class="modal-bg">
+            <div class="modal">
+                <h2></h2>
+                <label for="name">Имя:</label>
+                <input class="name" type="text" name="name"/>
+                <label for="password">Пароль:</label>
+                <input class="password" type="password" name="password"/>
+                <button class="default-btn submit-reg"></button>
+                <span class="modal-close">✖</span>
+            </div>
+        </div>
+		<script src="index.js"></script>
+        <script src="user.js"></script>
+	</body>
+</html>
